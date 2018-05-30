@@ -7,6 +7,7 @@ class Timer extends Component {
   }
   componentDidMount() {
     this.timer = setInterval(() => this.tick(), 1000);
+    console.log("le composant s'est monté");
   }
   componentDidUpdate() {
     console.log("un update a eu lieu");
